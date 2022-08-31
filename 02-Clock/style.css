@@ -4,7 +4,7 @@
 }
 
 .container {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), #ffffff25), url(/wallpaperbetter.com_2880x1800.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #ffffff25), url(./wallpaperbetter.com_2880x1800.jpg);
     background-size: cover;
     
     width: 100%;
