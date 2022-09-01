@@ -1,0 +1,92 @@
+:root{
+
+    --spacing : 30px;
+    --blur: 0px;
+    --color: #82AADE;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #e0e0e0;
+}
+h1{
+    width: 70%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.js-text{
+    color: var(--color);
+}
+
+
+.controls {
+    margin-top: 20px;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.controls .labels {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.controls .labels label{
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.controls .inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.controls .inputs input{
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.frame {
+    padding: var(--spacing);
+    background-color: var(--color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 60%;
+    margin: 3rem auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+}
+
+.frame img {
+    filter: blur(var(--blur));
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+}
+
