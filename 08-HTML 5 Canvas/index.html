@@ -5,6 +5,7 @@
   <title>HTML5 Canvas</title>
 </head>
 <body>
+<h1>Draw Someting! 😄</h1>
 <canvas id="draw" width="800" height="800"></canvas>
 <script>
 const canvas = document.querySelector('#draw');
@@ -19,7 +20,7 @@ ctx.strokeStyle = '#44A4E6';
 ctx.lineJoin = 'round';
 ctx.lineCap = 'round';
 
-ctx.lineWidth = 230;
+ctx.lineWidth = 100;
 
 let isDrawing = false;
 let lastX = 0;
@@ -71,6 +72,17 @@ canvas.addEventListener('mouseout', () => isDrawing = false);
 
   html, body {
     margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1{
+    padding: 1.5rem 5rem;
+    background-color: skyblue;
+    display: inline;
+    align-self: center;
+    border-radius: 20px;
+    color: whitesmoke;
   }
 </style>
 
