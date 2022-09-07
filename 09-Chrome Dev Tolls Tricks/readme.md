@@ -1,0 +1,1 @@
+<h2 align="center"><a href="https://atifsimsek.github.io/Javascript-30-Days-30-Project/09-Chrome%20Dev%20Tools%20Tricks/index.html">Click To Review</a> </h2>

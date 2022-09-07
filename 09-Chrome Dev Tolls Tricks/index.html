@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrome Dev Tools Tricks</title>
+</head>
+
+<p>Look The İndex.html 👨‍💻 </p>
+
+<body>
+
+    <script>
+
+    const dogs = [{ name: 'Snickers', age: 2 }, { name: 'hugo', age: 8 }];
+
+    const p = document.querySelector("p");
+
+    // Regular
+
+    console.log("Hi")
+
+    // Interpolated
+
+    console.log("Hello I am %s string!","😀");
+
+    // Styled
+
+    console.log("%c I am blue text","font-size:30px; background:skyblue;");
+
+    // warning!
+
+    console.warn("Deneme");
+
+    // Error :|
+
+    console.error("Deneme");
+
+    // Info
+
+    console.info("Deneme");
+
+    // Testing
+
+
+    console.assert(1===2,"Hata"); // Test Classlist
+
+    // clearing
+
+    // console.clear();
+
+    // Viewing DOM Elements
+
+    console.log(p)
+
+    console.dir(p)
+
+
+    // Grouping together
+
+    dogs.forEach(dog => {
+      console.groupCollapsed(`${dog.name}`);
+      console.log(`This is ${dog.name}`);
+      console.log(`${dog.name} is ${dog.age} years old`);
+      console.log(`${dog.name} is ${dog.age * 7} dog years old`);
+      console.groupEnd(`${dog.name}`);
+    });
+
+    
+
+    // counting
+
+    console.count("İstanbul");
+    console.count("İstanbul");
+    console.count("İstanbul");
+    console.count("İstanbul");
+    console.count("İstanbul");
+    console.count("Sakarya");
+    console.count("Sakarya");
+    console.count("Sakarya");
+    console.count("Sakarya");
+
+    // timing
+    console.time("fetching data");
+    fetch("https://api.github.com/users/atifsimsek")
+    .then(data => data.json())
+    .then(data=>{
+        console.timeEnd("fetching data");
+        console.log(data)
+    })
+
+
+
+
+    </script>
+</body>
+
+</html>
