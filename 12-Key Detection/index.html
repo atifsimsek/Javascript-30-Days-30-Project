@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Key Detection</title>
+    <script type="text/javascript" src="https://www.cornify.com/js/cornify.js"></script>
+</head>
+
+<body>
+
+    <style>
+        html,
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h2 {
+            position: absolute;
+            padding: 1.5rem 5rem;
+            background-color: skyblue;
+            display: inline;
+            align-self: center;
+            border-radius: 20px;
+            color: whitesmoke;
+        }
+    </style>
+
+    <h2>Psst... write "javascript" 😄 </h2>
+
+
+
+
+    <script>
+
+
+        const pressed = [];
+
+        const pass = "javascript";
+
+        const arr = ["elma", "armut", "kiraz", "portakal", "incir", "erik",]
+        console.log(arr)
+
+        const aaa = arr.splice(0, 3);
+        console.log(arr.join(""));
+
+        window.addEventListener("keyup", (e) => {
+            pressed.push(e.key);
+            console.log(pressed.join(""))
+            pressed.splice(-pass.length - 1, pressed.length - pass.length);
+
+            if (pressed.join("").includes(pass)) {
+                cornify_add();
+                cornify_add();
+                cornify_add();
+                cornify_add();
+                cornify_add();
+
+
+            }
+
+
+
+        })
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
